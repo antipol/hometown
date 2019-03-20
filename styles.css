@@ -1,37 +1,45 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  background-color: #3cdbff99;
+}
+
+body {
+  margin: 0 auto;
+  background-image: linear-gradient(#4899b5 0% 10%, #cdf3fb);
+  width: 800px;
   font-family: "Montserrat", sans-serif;
 }
 
-header {
-  background-image: linear-gradient(#3389a7, #28646d00);
-  padding: 10px;
-  text-align: center;
-}
-
 h1 {
+  padding: 5%;
   font-family: "Love Ya Like A Sister", cursive;
-  font-size: 6em;
+  text-align: center;
+  font-size: 7em;
   font-weight: 400;
   text-shadow: 3px 3px #fd0d66;
   color: #ffcc00;
 }
 
-h3 {
+h2 {
   text-align: center;
+  padding: 5%;
 }
 
 .ry-info {
-  padding: 0 180px;
-  margin: 0;
-  width: 850px;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .ry-text {
   float: left;
-  margin: 10px;
+  margin: 20px;
   width: 45%;
+}
+
+p {
+  padding: 4%;
 }
 
 ul {
@@ -60,6 +68,7 @@ ul {
 }
 
 .navbar a {
+  float: left;
   display: inline-block;
   text-decoration: none;
   width: 100%;
@@ -67,16 +76,25 @@ ul {
   text-shadow: 2px 2px #fd0d66;
   text-align: center;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .navbar a:hover {
-  color: #00ffa5;
+  color: #5feccc;
+  transition: 0.3s;
+  padding-bottom: 20px;
+  font-size: 1.5em;
+  text-shadow: 3px 3px 3px #160752;
 }
 
-.intro-pic {
-  position: relative;
-  bottom: -20px;
-  left: 300px;
-  z-index: -2;
+/* remember to delete classes for a tags in html */
+
+/* styling of deer at the bottom of landing page */
+
+.img-container {
+  text-align: center;
+}
+
+.img-container img {
   width: 30%;
 }
